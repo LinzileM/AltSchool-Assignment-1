@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+        }
+
+        header {
+      background: #452835;
+      color: white;
+      padding: 10px 0px;
+      text-align: right;
+      
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: centre;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    table {
+        width: 100;
+        max-width: 600px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    th, td{
+        padding: 15px;
+        text-align: left;
+    }
+    h1{
+        margin: 0;
+    }
+    p {
+        margin: 10px 0;
+        color:#555;
+    }
+    .form-container{
+        width: 100%;
+    }
+    label{
+        display: block;
+        margin: 10px 0 5px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            align-self: auto;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .terms {
+            text-align: center;
+            margin-top: 15px;
+        }
+        footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #452835;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Media.html">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <table>
+        <tr>
+            <td>
+            <img src="ASSETS/altschool logo.png" alt="AltSchool Africa Logo">
+            <p>Already an AltSchooler? <a href="Sign In!">Sign In!</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Sign Up</h1>
+                <p>Take the next steps to apply at AltSchool Africa</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/ALTSCHOOL FORM.html" method="post" class="form-container">
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="First name" placeholder="Enter first name" required>
+
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="Last name" placeholder="Enter last name" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="Gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="Email address" placeholder="Enter email address" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g. +1234567890">
+
+                    <label for="country">Select Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">--Select your country--</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="south-africa">South Africa</option>
+                    </select>
+
+                    <label for="state">Select State/City of Residence:</label>
+                    <select id="state" name="State/City of Residence" required>
+                        <option value="">--Enter your state of residence--</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="nairobi">Nairobi</option>
+                        <option value="london">London</option>
+                        <option value="johannesburg">Johannesburg</option>
+                    </select>
+
+                    <label for="referral">How did you hear about us:</label>
+                    <select id="referral" name="How did you hear about us" required>
+                        <option value="">--Select Channel--</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="friend">Friend</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="billboard">Billboard</option>
+                        <option value="sales-officer">Sales Officer</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="Password" required placeholder="Enter Password">
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="Confirm Password" required placeholder="Enter password again">
+
+                    <p class="terms">By clicking continue, I agree to <a href="ASSETS/Terms and Conditions.html.docx">Terms of use</a> and I acknowledge that I have read the <a href="ASSETS/Private Policy.html.docx">Privacy Policy</a></p>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <a href="#top">Back to Top</a>
+      </footer>
+</body>
+</html>
